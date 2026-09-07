@@ -6,7 +6,7 @@
 [![Groq](https://img.shields.io/badge/Groq-LPU_Inference-f55036.svg )](https://groq.com/ )
 [![Whisper](https://img.shields.io/badge/OpenAI-Whisper_v3-white.svg )](https://openai.com/research/whisper )
 
-### 🚀 Live Application: [Experience Jarvis Here]( )
+### 🚀 Live Application: [Experience Jarvis Here](https://jarvis-omni-modal-ai-zulbdg7ncrtdwasjnpfse3.streamlit.app/ )
 
 ## 📌 Executive Overview
 Jarvis is a production-ready, Omni-Modal AI Assistant designed to bridge the gap between human speech and Large Language Model reasoning. Moving beyond standard text-based chatbots, this system processes unstructured audio data, performs real-time speech-to-text inference, and maintains stateful conversational memory. Built on top of Groq's ultra-low latency LPU architecture, the system seamlessly integrates OpenAI's Whisper model for hearing, Llama-3/Qwen for reasoning, and Google TTS for vocal synthesis.
