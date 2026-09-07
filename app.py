@@ -111,9 +111,12 @@ if api_key:
                         
                         if app_mode == "🗣️ Real-Time Voice (Jarvis)":
                             with st.spinner("Generating voice reply..."):
-                                tts = gTTS(response.content, lang='en')
+                                # NEW: Clean the Markdown symbols so Jarvis doesn't read them out loud!
+                                clean_text = response.content.replace("*", "").replace("#", "").replace("_", "")
+                                tts = gTTS(clean_text, lang='en')
                                 tts.save("reply.mp3")
                                 st.audio("reply.mp3", format="audio/mp3", autoplay=True)
+
                     except Exception as e:
                         st.error(f"Audio processing failed. Please try speaking clearer or uploading a valid file. Error: {e}")
                     finally:
